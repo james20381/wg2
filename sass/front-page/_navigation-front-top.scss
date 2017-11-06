@@ -1,0 +1,48 @@
+
+
+.navbar-light {
+  .navbar-brand {
+    color: $navbar-front-page-active-color;
+
+    @include hover-focus {
+      color: $navbar-front-page-active-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-front-page-color;
+
+      @include hover-focus {
+        color: $navbar-front-page-hover-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-front-page-active-color;
+    }
+  }
+
+  .navbar-toggler {
+    color: $navbar-front-page-color;
+    border-color: $navbar-front-page-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: $navbar-front-page-toggler-icon-bg;
+  }
+
+  .navbar-text {
+    color: $navbar-front-page-color;
+    a {
+      color: $navbar-front-page-active-color;
+
+      @include hover-focus {
+        color: $navbar-front-page-active-color;
+      }
+    }
+  }
+}
